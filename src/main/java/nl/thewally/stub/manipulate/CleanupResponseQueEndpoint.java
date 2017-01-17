@@ -23,7 +23,7 @@ public class CleanupResponseQueEndpoint {
     @ResponsePayload
     public CleanupResponseQueResponse getResult(@RequestPayload CleanupResponseQueRequest request) {
         CleanupResponseQueResponse response = new CleanupResponseQueResponse();
-        if(request.getType().isEmpty()) {
+        if(request.getType()==null) {
             que.clearAll();
             if(que.isEmpty()) {
                 response.setResult("OK");
