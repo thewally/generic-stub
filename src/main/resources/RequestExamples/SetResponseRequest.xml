@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:gs="http://thewally.nl/stub/manipulate/service/setresponse">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:SetResponseRequest>
+         <gs:response>
+            <gs:requestTarget>Two</gs:requestTarget>
+            <gs:responseXml>Cool</gs:responseXml>
+         </gs:response>
+      </gs:SetResponseRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

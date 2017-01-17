@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://thewally.nl/stub/manipulate/service/setresponse"
+           targetNamespace="http://thewally.nl/stub/manipulate/service/setresponse" elementFormDefault="qualified">
+
+    <xs:element name="SetResponseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="response" type="tns:responseType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SetResponseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="responseType">
+        <xs:sequence>
+            <xs:element name="requestTarget" type="xs:string"/>
+            <xs:element name="responseXml" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

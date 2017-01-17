@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://thewally.nl/stub/manipulate/service/cleanupresponseque">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:CleanupResponseQueRequest>
+            <gs:type>type1</gs:type>
+        </gs:CleanupResponseQueRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
